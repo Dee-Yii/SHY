@@ -1,0 +1,27 @@
+{
+  "name": "shiyuan",
+  "description": "shiyuan project",
+  "main": "fis-conf.js",
+  "authors": [
+    "zhangdi"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "html",
+    "js",
+    "less"
+  ],
+  "homepage": "https://github.com/Dee-Yii/SHY",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "zepto.js": "^1.1.6",
+    "iswiper": "https://github.com/wechatui/swiper.git#^1.4.1"
+  }
+}
