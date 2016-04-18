@@ -1,0 +1,23 @@
+*{padding: 0;margin: 0;}
+body{
+	font-family: ;
+}
+header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #5ad6a9;
+	font-size: 0.136rem;
+	line-height: 0.3584rem;
+	text-align: center;
+	color: #1a1a1a
+}
+.back{
+	position: absolute;
+	left: 0.1024rem;
+	top: 50%;
+	margin-top: -0.075rem;
+	height: 0.149rem;
+	width: 0.196rem;
+	background: #fff
+}
