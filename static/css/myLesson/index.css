@@ -1,0 +1,33 @@
+body {
+  max-width: 3.2rem;
+  background-color: #fff;
+}
+.clearfix {
+  display: table;
+  clear: both;
+  content: '';
+}
+section {
+  width: 100%;
+}
+section .noLesson {
+  margin-top: 0.77226667rem;
+  width: 100%;
+}
+section .noLesson .image {
+  margin: 0 auto 0.21333333rem auto;
+  width: 1.64266667rem;
+  height: 1.2672rem;
+  background-image: url("../../images/noLesson.png");
+  background-size: 100% 100%;
+}
+section .noLesson button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.13653333rem;
+  -webkik-border-radius: 0.13653333rem;
+  width: 1.024rem;
+  height: 0.27306667rem;
+  background-color: #5ad6a9;
+  color: #ffffff;
+}
