@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>课程详情</title>
+    <link rel="stylesheet" href="../../static/css/public/common.css"/>
+    <link rel="stylesheet" href="../../static/css/public/public.css"/>
+    <link rel="stylesheet" href="../../static/css/lessonDetail/index.css"/>
+    <link rel="stylesheet" href="../../static/js/public/swiper/swiper.min.css"/>
+    <script>
+        (function(doc, win) {
+            var docEl = doc.documentElement,
+                    isIOS = navigator.userAgent.match(/iphone|ipod|ipad/gi),
+                    dpr = isIOS ? Math.min(win.devicePixelRatio, 3) : 1,
+            //dpr = window.top === window.self ? dpr : 1, //被iframe引用时，禁止缩放
+                    scale = 1 / dpr,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            docEl.dataset.dpr = dpr;
+            var recalc = function() {
+                var width = docEl.clientWidth;
+                if (width / dpr > 640) {
+                    width = 640 * dpr;
+                }
+                window.remScale =  width / 640;//缩放比例，用于JS设置大小时进行等比缩放
+                docEl.style.fontSize = 200 * (width / 640) + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body>
+<header>
+    <a class="back" href="javascript:;" ></a>
+    课程介绍
+</header>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../../static/images/lessonInstroduction/banner1.jpg" alt="沙画"/></div>
+        <div class="swiper-slide"><img src="../../static/images/lessonInstroduction/banner2.jpg" alt="故宫"/></div>
+        <div class="swiper-slide"><img src="../../static/images/lessonInstroduction/banner3.jpg" alt="灰色地带"/></div>
+        <div class="swiper-slide"><img src="../../static/images/lessonInstroduction/banner4.jpeg" alt="喵喵喵"/></div>
+        <div class="swiper-slide"><img src="../../static/images/lessonInstroduction/banner5.jpeg" alt="汪汪"/></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="banner-title">沙画</div>
+</div>
+<h3>沙画</h3>
+<div class="introduction">
+    <p>课程概述</p>
+    <div class="lesson-text">沙画，即用沙子做画。是一门独特的艺术。它结合现代人的审美观，依托深厚的文化底蕴和文化内涵；采用产自神奇大自然的天然彩沙，经手工精致而成。</div>
+    <div class="lesson-text more-text">沙画，即用沙子做画。是一门独特的艺术。它结合现代人的审美观，依托深厚的文化底蕴和文化内涵；采用产自神奇大自然的天然彩沙，经手工精致而成。</div>
+    <button>展开</button>
+</div>
+<div class="lesson-info">上课时间：<span class="time">星期三下午</span></div>
+<div class="lesson-info">上课老师：<span class="teacher">王老师</span></div>
+<div class="lesson-info">适合年纪：<span class="teacher">一年级</span></div>
+<footer>
+    <a href="#">
+        <i></i><span>返回首页选课</span>
+    </a>
+</footer>
+</body>
+<script src="../../static/js/public/zepto.min.js"></script>
+<script src="../../static/js/public/swiper/swiper.js"></script>
+<script src="../../static/js/public/public.js"></script>
+<script>
+    $(function (){
+        $("button").on("click",function (){
+            if($(".more-text").css("display") == "block"){
+                $(this).text("展开");
+                $(".more-text").hide();
+            }else{
+                $(this).text("收起");
+                $(".more-text").show();
+            }
+        });
+    });
+</script>
+</html>

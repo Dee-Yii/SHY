@@ -1,0 +1,45 @@
+.clearfix {
+  display: table;
+  clear: both;
+  content: '';
+}
+.icon-box {
+  padding: 0.29013333rem 0.512rem 0 0.192rem;
+  width: 100%;
+}
+.icon-box a {
+  margin-left: 0.32rem;
+  display: inline-block;
+  width: 0.512rem;
+}
+.icon-box a i {
+  display: inline-block;
+  width: 0.512rem;
+  height: 0.512rem;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.icon-box a:nth-child(1) i {
+  background-image: url("../../static/images/index/icon1.png");
+}
+.icon-box a:nth-child(2) i {
+  background-image: url("../../static/images/index/icon2.png");
+}
+.icon-box a:nth-child(3) i {
+  background-image: url("../../static/images/index/icon3.png");
+}
+.icon-box a:nth-child(4) i {
+  background-image: url("../../static/images/index/icon4.png");
+}
+.icon-box a:nth-child(5) i {
+  background-image: url("../../static/images/index/icon5.png");
+}
+.icon-box a:nth-child(6) i {
+  background-image: url("../../static/images/index/icon6.png");
+}
+.icon-box a p {
+  padding-top: 0.0896rem;
+  text-align: center;
+  font-size: 0.128rem;
+  color: #1a1a1a;
+}

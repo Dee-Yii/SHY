@@ -1,0 +1,54 @@
+@rem:200*750/640rem;
+.clearfix{
+  display: table;
+  clear: both;
+  content:"";
+}
+.lesson-box{
+  padding-top: 102/@rem;
+  width: 100%;
+  &::after{
+    .clearfix;
+  }
+  a{
+    float: left;
+    display: inline-block;
+    text-align: center;
+    p{
+      padding-top: 20/@rem;
+      font-size: 30/@rem;
+      color: #1a1a1a;
+    }
+  }
+  .zstz-sjhd{
+    margin: 0 auto;
+    width: 50%;
+    i{
+      display: inline-block;
+      width: 120/@rem;
+      height: 120/@rem;
+      background-size: 100% 100%;
+    }
+    &:nth-child(1){
+      i{
+        background-image: url("../../../static/images/lessonInstroduction/lesson1.png");
+      }
+    }
+    &:nth-child(2){
+      i{
+        background-image: url("../../../static/images/lessonInstroduction/lesson2.png");
+      }
+    }
+  }
+  .tytc{
+    padding-top: 60/@rem;
+    width: 100%;
+    i{
+      display: inline-block;
+      width: 160/@rem;
+      height: 160/@rem;
+      background-image: url("../../../static/images/lessonInstroduction/lesson3.png");
+      background-size: 100% 100%;
+    }
+  }
+}

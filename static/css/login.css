@@ -1,23 +1,109 @@
-*{padding: 0;margin: 0;}
-body{
-	font-family: ;
+.clearfix {
+  display: table;
+  clear: both;
+  content: '';
 }
-header{
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background: #5ad6a9;
-	font-size: 0.136rem;
-	line-height: 0.3584rem;
-	text-align: center;
-	color: #1a1a1a
+section {
+  padding-top: 0.3584rem;
+  width: 100%;
+  text-align: center;
 }
-.back{
-	position: absolute;
-	left: 0.1024rem;
-	top: 50%;
-	margin-top: -0.075rem;
-	height: 0.149rem;
-	width: 0.196rem;
-	background: #fff
+section ul {
+  width: 100%;
+}
+section ul li {
+  margin-bottom: 0.2048rem;
+  width: 100%;
+  height: 0.31573333rem;
+}
+section ul li::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+section ul li div.left {
+  float: left;
+  width: 0.93013333rem;
+  text-align: right;
+  line-height: 0.31573333rem;
+  font-size: 0.128rem;
+  color: #1a1a1a;
+}
+section ul li div.right {
+  position: relative;
+  float: left;
+  border: 1px solid #aaa;
+  width: 1.536rem;
+  height: 0.3072rem;
+}
+section ul li div.right input {
+  padding-left: 0.08533333rem;
+  border: none;
+  width: 1.45066667rem;
+  height: 100%;
+  line-height: 0.31573333rem;
+}
+section ul li div.right .select-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 0.29013333rem;
+  height: 0.29013333rem;
+  background-color: #5ad6a9;
+}
+section ul li div.right .select-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  border-top: 0.08106667rem solid #ffffff;
+  border-left: 0.08106667rem solid transparent;
+  border-right: 0.08106667rem solid transparent;
+  width: 0;
+  height: 0;
+}
+section ul li p {
+  clear: both;
+  padding-top: 0.07253333rem;
+  padding-left: 0.93866667rem;
+  font-size: 0.1024rem;
+  color: #f4285d;
+  text-align: left;
+}
+section button {
+  margin-top: 0.3456rem;
+  border-radius: 0.04266667rem;
+  -webkit-border-radius: 0.04266667rem;
+  width: 2.048rem;
+  height: 0.32426667rem;
+  background-color: #5ad6a9;
+  color: #ffffff;
+  font-size: 0.1536rem;
+}
+.modal-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.36);
+}
+.modal-box .modal-info {
+  position: absolute;
+  left: 50%;
+  top: 1.62133333rem;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  border-radius: 0.0256rem;
+  width: 1.36533333rem;
+  height: 0.34986667rem;
+  background-color: #000;
+  line-height: 0.34986667rem;
+  font-size: 0.11093333rem;
+  color: #ffffff;
+  text-align: center;
 }

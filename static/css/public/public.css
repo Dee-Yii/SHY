@@ -1,0 +1,85 @@
+.clearfix {
+  display: table;
+  clear: both;
+  content: '';
+}
+body {
+  padding-top: 0.3584rem;
+  max-width: 3.2rem;
+  background-color: #fff;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.3584rem;
+  background: #5ad6a9;
+  font-size: 0.136rem;
+  line-height: 0.36266667rem;
+  text-align: center;
+  color: #1a1a1a;
+  z-index: 100;
+}
+.back {
+  position: absolute;
+  left: 0.1024rem;
+  top: 50%;
+  margin-top: -0.075rem;
+  height: 0.149rem;
+  width: 0.196rem;
+  background-image: url("../../../static/images/public/back.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 1.50186667rem;
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-wrapper::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.swiper-container .swiper-wrapper .swiper-slide {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-pagination {
+  position: absolute;
+  right: 0;
+  bottom: 0.08533333rem;
+  width: 1.0112rem;
+  height: 0.06826667rem;
+}
+.swiper-container .swiper-pagination span {
+  margin-right: 0.11946667rem;
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 0.06826667rem;
+  height: 0.06826667rem;
+  background-color: #ffffff;
+}
+.swiper-container .swiper-pagination .swiper-active-switch {
+  background-color: #5ad6a9;
+}
+.swiper-container .banner-title {
+  position: absolute;
+  left: 0;
+  bottom: 0.09386667rem;
+  padding-left: 0.17493333rem;
+  color: #ffffff;
+  font-size: 0.128rem;
+}

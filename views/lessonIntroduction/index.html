@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="../../static/css/public/common.css"/>
+    <link rel="stylesheet" href="../../static/css/public/public.css"/>
+    <link rel="stylesheet" href="../../static/css/lessonIntroduction/index.css">
+    <link rel="stylesheet" href="../../static/js/public/swiper/swiper.min.css"/>
+    <title>课程介绍</title>
+    <script>
+        (function(doc, win) {
+            var docEl = doc.documentElement,
+                    isIOS = navigator.userAgent.match(/iphone|ipod|ipad/gi),
+                    dpr = isIOS ? Math.min(win.devicePixelRatio, 3) : 1,
+            //dpr = window.top === window.self ? dpr : 1, //被iframe引用时，禁止缩放
+                    scale = 1 / dpr,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            docEl.dataset.dpr = dpr;
+            var recalc = function() {
+                var width = docEl.clientWidth;
+                if (width / dpr > 640) {
+                    width = 640 * dpr;
+                }
+                window.remScale =  width / 640;//缩放比例，用于JS设置大小时进行等比缩放
+                docEl.style.fontSize = 200 * (width / 640) + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body>
+<header>
+    <a class="back" href="javascript:;" ></a>
+    课程介绍
+</header>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../../static/images/lessonInstroduction/banner1.jpg" alt="沙画"/></div>
+        <div class="swiper-slide"><img src="../../static/images/lessonInstroduction/banner2.jpg" alt="故宫"/></div>
+        <div class="swiper-slide"><img src="../../static/images/lessonInstroduction/banner3.jpg" alt="灰色地带"/></div>
+        <div class="swiper-slide"><img src="../../static/images/lessonInstroduction/banner4.jpeg" alt="喵喵喵"/></div>
+        <div class="swiper-slide"><img src="../../static/images/lessonInstroduction/banner5.jpeg" alt="汪汪"/></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="banner-title">沙画</div>
+</div>
+<div class="lesson-box">
+    <a href="#" class="zstz-sjhd">
+        <i></i>
+        <p>知识拓展</p>
+    </a>
+    <a href="#" class="zstz-sjhd">
+        <i></i>
+        <p>实践活动</p>
+    </a>
+    <a href="#" class="tytc">
+        <i></i>
+        <p>实践活动</p>
+    </a>
+</div>
+</body>
+<script src="../../static/js/public/zepto.min.js"></script>
+<script src="../../static/js/public/swiper/swiper.js"></script>
+<script src="../../static/js/public/public.js"></script>
+</html>

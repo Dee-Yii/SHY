@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>我的课程</title>
-    <link rel="stylesheet" href="../../static/css/myLesson/index.css"/>
     <link rel="stylesheet" href="../../static/css/public/common.css"/>
+    <link rel="stylesheet" href="../../static/css/public/public.css"/>
+    <link rel="stylesheet" href="../../static/css/myLesson/index.css"/>
     <script>
         (function(doc, win) {
             var docEl = doc.documentElement,
@@ -30,11 +31,54 @@
     </script>
 </head>
 <body>
-<header></header>
+<header>
+    <a class="back" href="javascript:;" ></a>
+    我的课程
+</header>
 <section>
     <div class="noLesson">
         <div class="image"></div>
-        <button>我知道了</button>
+        <a href="#">我知道了</a>
+    </div>
+    <div class="hasLesson">
+        <div class="lessonBox">
+            <div class="timeAddress">
+                <div>上课时间：<span>星期二下午</span></div>
+                <div>上课地点：<span>郁文楼A201</span></div>
+            </div>
+            <div class="lessonContent">
+                <p>上课用具：<span>沙画台</span></p>
+                <ul>
+                    <li>沙子</li>
+                </ul>
+                <a href="javascript:void(0);">购买</a>
+            </div>
+        </div>
+        <h3>我的课程</h3>
+        <div class="myLessonBox">
+            <ul>
+                <li>
+                    <p>星期一</p>
+                    <div>沙画</div>
+                </li>
+                <li>
+                    <p>星期二</p>
+                    <div>沙画</div>
+                </li>
+                <li>
+                    <p>星期三</p>
+                    <div>沙画</div>
+                </li>
+                <li>
+                    <p>星期四</p>
+                    <div>沙画</div>
+                </li>
+                <li>
+                    <p>星期五</p>
+                    <div>沙画</div>
+                </li>
+            </ul>
+        </div>
     </div>
 </section>
 </body>

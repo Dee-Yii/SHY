@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>登陆</title>
+	<link rel="stylesheet" href="../static/css/public/common.css"/>
+	<link rel="stylesheet" href="../static/css/public/public.css"/>
 	<link rel="stylesheet" href="../static/css/login.css">
-	<title>Document</title>
 	<script>
 	(function(doc, win) {
 		var docEl = doc.documentElement,
@@ -33,5 +35,38 @@
 		<a class="back" href="javascript:;" ></a>
 		登录
 	</header>
+	<section>
+		<ul>
+			<li>
+				<div class="left">角色：</div>
+				<div class="right">
+					<span class="select-btn"><i></i></span>
+				</div>
+			</li>
+			<li>
+				<div class="left">账号：</div>
+				<div class="right">
+					<input type="text"/>
+				</div>
+			</li>
+			<li>
+				<div class="left">密码：</div>
+				<div class="right">
+					<input type="text"/>
+				</div>
+			</li>
+			<li>
+				<div class="left">新密码：</div>
+				<div class="right">
+					<input type="text"/>
+				</div>
+				<p>初次登陆，请修改新密码！</p>
+			</li>
+		</ul>
+		<button>登陆</button>
+	</section>
+	<div class="modal-box">
+		<div class="modal-info">账号或密码错误！</div>
+	</div>
 </body>
 </html>

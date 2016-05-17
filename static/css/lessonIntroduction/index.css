@@ -1,0 +1,51 @@
+.clearfix {
+  display: table;
+  clear: both;
+  content: "";
+}
+.lesson-box {
+  padding-top: 0.4352rem;
+  width: 100%;
+}
+.lesson-box::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.lesson-box a {
+  float: left;
+  display: inline-block;
+  text-align: center;
+}
+.lesson-box a p {
+  padding-top: 0.08533333rem;
+  font-size: 0.128rem;
+  color: #1a1a1a;
+}
+.lesson-box .zstz-sjhd {
+  margin: 0 auto;
+  width: 50%;
+}
+.lesson-box .zstz-sjhd i {
+  display: inline-block;
+  width: 0.512rem;
+  height: 0.512rem;
+  background-size: 100% 100%;
+}
+.lesson-box .zstz-sjhd:nth-child(1) i {
+  background-image: url("../../../static/images/lessonInstroduction/lesson1.png");
+}
+.lesson-box .zstz-sjhd:nth-child(2) i {
+  background-image: url("../../../static/images/lessonInstroduction/lesson2.png");
+}
+.lesson-box .tytc {
+  padding-top: 0.256rem;
+  width: 100%;
+}
+.lesson-box .tytc i {
+  display: inline-block;
+  width: 0.68266667rem;
+  height: 0.68266667rem;
+  background-image: url("../../../static/images/lessonInstroduction/lesson3.png");
+  background-size: 100% 100%;
+}
