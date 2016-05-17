@@ -4,11 +4,11 @@
   content: '';
 }
 .icon-box {
-  padding: 0.29013333rem 0.512rem 0 0.192rem;
+  padding: 0.29013333rem 0.35413333rem 0.14506667rem 0.35413333rem;
   width: 100%;
 }
 .icon-box a {
-  margin-left: 0.32rem;
+  margin: 0 0.14506667rem 0.29013333rem 0.14506667rem;
   display: inline-block;
   width: 0.512rem;
 }
@@ -42,4 +42,86 @@
   text-align: center;
   font-size: 0.128rem;
   color: #1a1a1a;
+}
+.list-title {
+  margin-bottom: 0.08106667rem;
+  padding-left: 0.09386667rem;
+  width: 100%;
+  height: 0.22186667rem;
+}
+.list-title i {
+  display: inline-block;
+  width: 0.22186667rem;
+  height: 0.22186667rem;
+  background-image: url("../../static/images/index/title.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
+.list-title span {
+  display: inline-block;
+  padding-left: 0.08533333rem;
+  font-size: 0.1536rem;
+  color: #1a1a1a;
+  vertical-align: middle;
+}
+ul {
+  width: 100%;
+}
+ul li {
+  padding: 0.13226667rem 0.08533333rem;
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
+}
+ul li a {
+  display: inline-block;
+  width: 100%;
+}
+ul li a::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+ul li a img {
+  float: left;
+  width: 0.59733333rem;
+  height: 0.384rem;
+}
+ul li a .right {
+  float: left;
+  padding-left: 0.13226667rem;
+}
+ul li a .right p {
+  text-align: left;
+}
+ul li a .right .title {
+  padding-bottom: 0.1536rem;
+  font-size: 0.11946667rem;
+  color: #3a3a3a;
+}
+ul li a .right .time {
+  font-size: 0.09386667rem;
+  color: #9c9c9c;
+}
+ul li a button {
+  float: right;
+  margin-right: 0;
+  border: 1px solid #d2d2d2;
+  border-radius: 0.11093333rem;
+  -webkit-border-radius: 0.11093333rem;
+  width: 0.60586667rem;
+  height: 0.22186667rem;
+  background-color: transparent;
+  font-size: 0.09813333rem;
+  color: #3bbe8e;
+}
+ul li a .more-text {
+  display: none;
+  float: left;
+  padding: 0.1408rem 0.0896rem 0 0.0896rem;
+  width: 100%;
+  font-size: 0.1024rem;
+  color: #747474;
+  text-align: justify;
+  line-height: 1.4;
 }
