@@ -1,0 +1,16 @@
+.handle-result {
+  margin-bottom: 0.40106667rem;
+  padding: 0.54613333rem 0 1.30133333rem 0.72533333rem;
+  border-bottom: 0.00853333rem dashed #d8d8d8;
+  width: 100%;
+}
+.handle-result p {
+  width: 100%;
+  text-align: left;
+  font-size: 0.11946667rem;
+  color: #474747;
+  line-height: 1.4;
+}
+.handle-result p a {
+  color: #228f68;
+}

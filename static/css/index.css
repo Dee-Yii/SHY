@@ -66,16 +66,17 @@
   vertical-align: middle;
 }
 ul {
+  padding: 0 0.08533333rem;
   width: 100%;
 }
 ul li {
-  padding: 0.13226667rem 0.08533333rem;
+  position: relative;
+  padding: 0.13226667rem 0;
   border-bottom: 1px solid #eaeaea;
   width: 100%;
 }
 ul li a {
   display: inline-block;
-  width: 100%;
 }
 ul li a::after {
   display: table;
@@ -103,18 +104,6 @@ ul li a .right .time {
   font-size: 0.09386667rem;
   color: #9c9c9c;
 }
-ul li a button {
-  float: right;
-  margin-right: 0;
-  border: 1px solid #d2d2d2;
-  border-radius: 0.11093333rem;
-  -webkit-border-radius: 0.11093333rem;
-  width: 0.60586667rem;
-  height: 0.22186667rem;
-  background-color: transparent;
-  font-size: 0.09813333rem;
-  color: #3bbe8e;
-}
 ul li a .more-text {
   display: none;
   float: left;
@@ -124,4 +113,60 @@ ul li a .more-text {
   color: #747474;
   text-align: justify;
   line-height: 1.4;
+}
+ul li button {
+  position: absolute;
+  right: 0;
+  top: 0.13226667rem;
+  border: 1px solid #d2d2d2;
+  border-radius: 0.11093333rem;
+  -webkit-border-radius: 0.11093333rem;
+  width: 0.60586667rem;
+  height: 0.22186667rem;
+  background-color: transparent;
+  font-size: 0.09813333rem;
+  color: #3bbe8e;
+}
+.swiper-container-advertisement {
+  position: relative;
+  width: 100%;
+  height: 1.50186667rem;
+}
+.swiper-container-advertisement .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.swiper-container-advertisement .swiper-wrapper::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.swiper-container-advertisement .swiper-wrapper .swiper-slide {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+.swiper-container-advertisement .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container-advertisement .swiper-pagination-advertisement {
+  position: absolute;
+  right: 0;
+  bottom: 0.08533333rem;
+  width: 1.0112rem;
+  height: 0.06826667rem;
+}
+.swiper-container-advertisement .swiper-pagination-advertisement span {
+  margin-right: 0.11946667rem;
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 0.06826667rem;
+  height: 0.06826667rem;
+  background-color: #ffffff;
+}
+.swiper-container-advertisement .swiper-pagination-advertisement .swiper-active-switch {
+  background-color: #5ad6a9;
 }
