@@ -1,0 +1,149 @@
+.clearfix {
+  display: table;
+  clear: both;
+  content: '';
+}
+body {
+  padding-top: 0.3584rem;
+  max-width: 3.2rem;
+  background-color: #fff;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.3584rem;
+  background: #5ad6a9;
+  font-size: 0.136rem;
+  line-height: 0.36266667rem;
+  text-align: center;
+  color: #1a1a1a;
+  z-index: 100;
+}
+.back {
+  position: absolute;
+  left: 0.1024rem;
+  top: 50%;
+  margin-top: -0.075rem;
+  height: 0.149rem;
+  width: 0.196rem;
+  background-image: url("../../../static/images/public/back.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 1.50186667rem;
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-wrapper::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.swiper-container .swiper-wrapper .swiper-slide {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-pagination {
+  position: absolute;
+  right: 0;
+  bottom: 0.08533333rem;
+  width: 1.0112rem;
+  height: 0.06826667rem;
+}
+.swiper-container .swiper-pagination span {
+  margin-right: 0.11946667rem;
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 0.06826667rem;
+  height: 0.06826667rem;
+  background-color: #ffffff;
+}
+.swiper-container .swiper-pagination .swiper-active-switch {
+  background-color: #5ad6a9;
+}
+.swiper-container .banner-title {
+  position: absolute;
+  left: 0;
+  bottom: 0.09386667rem;
+  padding-left: 0.17493333rem;
+  color: #ffffff;
+  font-size: 0.128rem;
+}
+p.myLesson-title {
+  padding-bottom: 0.11946667rem;
+  font-size: 0.13653333rem;
+  font-weight: normal;
+  color: #1a1a1a;
+  text-align: center;
+}
+.myLessonBox {
+  margin: 0 auto;
+  border: 0.00853333rem solid #e1e1e1;
+  width: 2.78186667rem;
+}
+.myLessonBox ul {
+  padding: 0 !important;
+  width: 100% !important;
+}
+.myLessonBox ul::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.myLessonBox ul li {
+  margin-right: 0 !important;
+  float: left;
+  border-right: 0.00853333rem solid #e1e1e1;
+  width: 20% !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  height: auto !important;
+  background-color: #ffffff !important;
+}
+.myLessonBox ul li p {
+  border-bottom: 1px solid #e1e1e1;
+  height: 0.21333333rem;
+  line-height: 0.21333333rem;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.1024rem;
+}
+.myLessonBox ul li div {
+  height: 0.45226667rem;
+  line-height: 0.45226667rem;
+  font-size: 0.11093333rem;
+  color: #323232;
+  text-align: center;
+}
+.myLessonBox ul li:nth-child(1) p {
+  background-color: #e37cd3;
+}
+.myLessonBox ul li:nth-child(2) p {
+  background-color: #60cbbb;
+}
+.myLessonBox ul li:nth-child(3) p {
+  background-color: #8a80eb;
+}
+.myLessonBox ul li:nth-child(4) p {
+  background-color: #e1975b;
+}
+.myLessonBox ul li:nth-child(5) {
+  border-right: none;
+}
+.myLessonBox ul li:nth-child(5) p {
+  background-color: #5bbf72;
+}

@@ -1,16 +1,23 @@
 @rem:200*750/640rem;
-body{
-  max-width:750/@rem;
-  background-color: #fff;
+.clearfix{
+  display: table;
+  clear: both;
+  content: '';
 }
 .clearfix{
   display: table;
   clear: both;
   content: '';
 }
+header{
+  height: 84/@rem;
+  background-color: #5ad6a9;
+}
 section{
   width: 100%;
+  text-align: center;
   .noLesson{
+    display:none;
     margin-top: 181/@rem;
     width: 100%;
     .image{
@@ -20,7 +27,7 @@ section{
       background-image: url("../../images/noLesson.png");
       background-size: 100% 100%;
     }
-    button{
+    a{
       display: block;
       margin: 0 auto;
       border-radius: 32/@rem;
@@ -29,7 +36,66 @@ section{
       height: 64/@rem;
       background-color: #5ad6a9;
       color: #ffffff;
+      text-align: center;
+      line-height: 64/@rem;
     }
   }
-  
+  .lessonBox{
+    margin: 46/@rem auto 358/@rem auto;
+    border: 2/@rem solid #e1e1e1;
+    width: 670/@rem;
+    .timeAddress{
+      width: 100%;
+      height: 59/@rem;
+      border-bottom: 2/@rem solid #e1e1e1;
+      &::after{
+        .clearfix;
+      }
+      div{
+        float: left;
+        padding-left: 11/@rem;
+        width: 50%;
+        height: 100%;
+        text-align: left;
+        line-height: 59/@rem;
+        font-size: 26/@rem;
+        color: #1a1a1a;
+        &:nth-child(1){
+            border-right: 2/@rem solid #e1e1e1;
+        }
+      }
+    }
+    .lessonContent{
+      position: relative;
+      padding: 16/@rem 0 0 11/@rem;
+      p{
+        padding-bottom: 27/@rem;
+        text-align: left;
+        font-size: 26/@rem;
+        color: #1a1a1a;
+      }
+      ul{
+        padding-bottom: 27/@rem;
+        li{
+          padding-left: 111/@rem;
+          text-align: left;
+          font-size: 26/@rem;
+          color: #1a1a1a;
+        }
+      }
+      a{
+        position: absolute;
+        top: 16/@rem;
+        right: 19/@rem;
+        border-radius: 6/@rem;
+        width: 148/@rem;
+        height: 52/@rem;
+        text-align: center;
+        line-height: 52/@rem;
+        background-color: #fca343;
+        font-size: 26/@rem;
+        color: #ffffff;
+      }
+    }
+  }
 }

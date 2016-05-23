@@ -1,16 +1,23 @@
-body {
-  max-width: 3.2rem;
-  background-color: #fff;
+.clearfix {
+  display: table;
+  clear: both;
+  content: '';
 }
 .clearfix {
   display: table;
   clear: both;
   content: '';
 }
+header {
+  height: 0.3584rem;
+  background-color: #5ad6a9;
+}
 section {
   width: 100%;
+  text-align: center;
 }
 section .noLesson {
+  display: none;
   margin-top: 0.77226667rem;
   width: 100%;
 }
@@ -21,7 +28,7 @@ section .noLesson .image {
   background-image: url("../../images/noLesson.png");
   background-size: 100% 100%;
 }
-section .noLesson button {
+section .noLesson a {
   display: block;
   margin: 0 auto;
   border-radius: 0.13653333rem;
@@ -29,5 +36,67 @@ section .noLesson button {
   width: 1.024rem;
   height: 0.27306667rem;
   background-color: #5ad6a9;
+  color: #ffffff;
+  text-align: center;
+  line-height: 0.27306667rem;
+}
+section .lessonBox {
+  margin: 0.19626667rem auto 1.52746667rem auto;
+  border: 0.00853333rem solid #e1e1e1;
+  width: 2.85866667rem;
+}
+section .lessonBox .timeAddress {
+  width: 100%;
+  height: 0.25173333rem;
+  border-bottom: 0.00853333rem solid #e1e1e1;
+}
+section .lessonBox .timeAddress::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+section .lessonBox .timeAddress div {
+  float: left;
+  padding-left: 0.04693333rem;
+  width: 50%;
+  height: 100%;
+  text-align: left;
+  line-height: 0.25173333rem;
+  font-size: 0.11093333rem;
+  color: #1a1a1a;
+}
+section .lessonBox .timeAddress div:nth-child(1) {
+  border-right: 0.00853333rem solid #e1e1e1;
+}
+section .lessonBox .lessonContent {
+  position: relative;
+  padding: 0.06826667rem 0 0 0.04693333rem;
+}
+section .lessonBox .lessonContent p {
+  padding-bottom: 0.1152rem;
+  text-align: left;
+  font-size: 0.11093333rem;
+  color: #1a1a1a;
+}
+section .lessonBox .lessonContent ul {
+  padding-bottom: 0.1152rem;
+}
+section .lessonBox .lessonContent ul li {
+  padding-left: 0.4736rem;
+  text-align: left;
+  font-size: 0.11093333rem;
+  color: #1a1a1a;
+}
+section .lessonBox .lessonContent a {
+  position: absolute;
+  top: 0.06826667rem;
+  right: 0.08106667rem;
+  border-radius: 0.0256rem;
+  width: 0.63146667rem;
+  height: 0.22186667rem;
+  text-align: center;
+  line-height: 0.22186667rem;
+  background-color: #fca343;
+  font-size: 0.11093333rem;
   color: #ffffff;
 }

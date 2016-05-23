@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>业余活动</title>
+    <link rel="stylesheet" href="../../static/css/public/common.css"/>
+    <link rel="stylesheet" href="../../static/css/public/public.css"/>
+    <link rel="stylesheet" href="../../static/css/activeList/index.css"/>
+    <script>
+        (function(doc, win) {
+            var docEl = doc.documentElement,
+                    isIOS = navigator.userAgent.match(/iphone|ipod|ipad/gi),
+                    dpr = isIOS ? Math.min(win.devicePixelRatio, 3) : 1,
+            //dpr = window.top === window.self ? dpr : 1, //被iframe引用时，禁止缩放
+                    scale = 1 / dpr,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            docEl.dataset.dpr = dpr;
+            var recalc = function() {
+                var width = docEl.clientWidth;
+                if (width / dpr > 640) {
+                    width = 640 * dpr;
+                }
+                window.remScale =  width / 640;//缩放比例，用于JS设置大小时进行等比缩放
+                docEl.style.fontSize = 200 * (width / 640) + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body>
+<header>
+    <a class="back" href="javascript:;" ></a>
+    业余活动
+    <i class="list-logo"></i>
+    <ul class="list-menu">
+        <li>
+            <a href="#">
+                <i class="active-kind"></i>
+                <span>比赛</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="active-kind"></i>
+                <span>活动</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="active-kind"></i>
+                <span>论坛讲座</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="active-kind"></i>
+                <span>小明星</span>
+            </a>
+        </li>
+    </ul>
+</header>
+<ul class="active-list">
+    <li>
+        <a href="#">
+            <img src="../../static/images/activeList/active1.jpg" alt=""/>
+            <div class="active-box">
+                <p class="active-name">2016小画家梦国际少儿书画大赛</p>
+                <p class="active-time">2016年6月2日</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../../static/images/activeList/active1.jpg" alt=""/>
+            <div class="active-box">
+                <p class="active-name">2016小画家梦国际少儿书画大赛</p>
+                <p class="active-time">2016年6月2日</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../../static/images/activeList/active1.jpg" alt=""/>
+            <div class="active-box">
+                <p class="active-name">2016小画家梦国际少儿书画大赛</p>
+                <p class="active-time">2016年6月2日</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../../static/images/activeList/active1.jpg" alt=""/>
+            <div class="active-box">
+                <p class="active-name">2016小画家梦国际少儿书画大赛</p>
+                <p class="active-time">2016年6月2日</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../../static/images/activeList/active1.jpg" alt=""/>
+            <div class="active-box">
+                <p class="active-name">2016小画家梦国际少儿书画大赛</p>
+                <p class="active-time">2016年6月2日</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../../static/images/activeList/active1.jpg" alt=""/>
+            <div class="active-box">
+                <p class="active-name">2016小画家梦国际少儿书画大赛</p>
+                <p class="active-time">2016年6月2日</p>
+            </div>
+        </a>
+    </li>
+</ul>
+</body>
+<script src="../../static/js/public/zepto.min.js"></script>
+<script>
+    $(function (){
+       $(".list-logo").on("click",function (){
+          if($(".list-menu").css("display") == "none"){
+              $(".list-menu").show();
+          }else{
+              $(".list-menu").hide();
+          }
+       });
+    });
+</script>
+</html>

@@ -1,0 +1,110 @@
+.clearfix {
+  display: table;
+  clear: both;
+  content: '';
+}
+header .list-logo {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  right: 0.1024rem;
+  display: inline-block;
+  width: 0.2304rem;
+  height: 0.1664rem;
+  background-image: url("../../../static/images/activeList/list.png");
+  background-size: 100% 100%;
+}
+header .list-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0.3584rem;
+  width: 1.36533333rem;
+}
+header .list-menu li {
+  padding-left: 0.256rem;
+  width: 100%;
+  height: 0.39253333rem;
+}
+header .list-menu li:nth-child(1) {
+  background-color: #83c5e3;
+}
+header .list-menu li:nth-child(1) .active-kind {
+  background-image: url("../../../static/images/activeList/listLogo1.png");
+}
+header .list-menu li:nth-child(2) {
+  background-color: #f494b3;
+}
+header .list-menu li:nth-child(2) .active-kind {
+  background-image: url("../../../static/images/activeList/listLogo2.png");
+}
+header .list-menu li:nth-child(3) {
+  background-color: #7ad8ce;
+}
+header .list-menu li:nth-child(3) .active-kind {
+  background-image: url("../../../static/images/activeList/listLogo3.png");
+}
+header .list-menu li:nth-child(4) {
+  background-color: #b1a6d7;
+}
+header .list-menu li:nth-child(4) .active-kind {
+  background-image: url("../../../static/images/activeList/listLogo4.png");
+}
+header .list-menu li a {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+header .list-menu li a .active-kind {
+  display: inline-block;
+  width: 0.1408rem;
+  height: 0.12373333rem;
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
+header .list-menu li a span {
+  display: inline-block;
+  padding-left: 0.08533333rem;
+  line-height: 0.39253333rem;
+  color: #ffffff;
+  font-size: 0.13653333rem;
+  text-align: left;
+  vertical-align: middle;
+}
+.active-list {
+  padding: 0.04266667rem 0.09386667rem 0 0.09386667rem;
+  width: 100%;
+}
+.active-list li {
+  padding: 0.1408rem 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+.active-list li a {
+  display: block;
+  width: 100%;
+}
+.active-list li a::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.active-list li a img {
+  float: left;
+  width: 0.512rem;
+  height: 0.34133333rem;
+}
+.active-list li a .active-box {
+  float: left;
+  margin-left: 0.08533333rem;
+  text-align: left;
+}
+.active-list li a .active-box .active-name {
+  font-size: 0.11946667rem;
+  color: #1a1a1a;
+}
+.active-list li a .active-box .active-time {
+  padding-top: 0.13653333rem;
+  font-size: 0.1024rem;
+  color: #9a9a9a;
+}

@@ -1,0 +1,48 @@
+.clearfix {
+  display: table;
+  clear: both;
+  content: "";
+}
+ul {
+  width: 100%;
+}
+ul li {
+  padding: 0 0.09386667rem;
+  width: 100%;
+}
+ul li a {
+  display: inline-block;
+  padding: 0.128rem 0;
+  border-bottom: 1px solid #e1e1e1;
+  width: 100%;
+}
+ul li a::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+ul li a .img-box {
+  margin-right: 0.0896rem;
+  float: left;
+  width: 0.512rem;
+  height: 0.34133333rem;
+}
+ul li a .img-box img {
+  width: 100%;
+  height: 100%;
+}
+ul li a .text-box {
+  float: left;
+}
+ul li a .text-box p {
+  text-align: left;
+}
+ul li a .text-box .title-one {
+  padding-bottom: 0.13653333rem;
+  font-size: 0.11946667rem;
+  color: #1a1a1a;
+}
+ul li a .text-box .title-two {
+  font-size: 0.1024rem;
+  color: #7d7d7d;
+}

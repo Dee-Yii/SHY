@@ -1,0 +1,108 @@
+@rem:200*750/640rem;
+.clearfix{
+  display: table;
+  clear: both;
+  content: '';
+}
+section{
+  padding-top: 84/@rem;
+  width: 100%;
+  text-align: center;
+  ul{
+    width: 100%;
+    li{
+      margin-bottom: 48/@rem;
+      width: 100%;
+      height: 74/@rem;
+      &::after{
+        .clearfix;
+      }
+      div.left{
+        float: left;
+        width: 218/@rem;
+        text-align: right;
+        line-height: 74/@rem;
+        font-size: 30/@rem;
+        color: #1a1a1a;
+      }
+      div.right{
+        position: relative;
+        float: left;
+        border: 1px solid #aaa;
+        width: 360/@rem;
+        height: 72/@rem;
+        input{
+          padding-left: 20/@rem;
+          border: none;
+          width: 340/@rem;
+          height: 100%;
+          line-height: 74/@rem;
+        }
+        .select-btn{
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: inline-block;
+          width: 68/@rem;
+          height: 68/@rem;
+          background-color: #5ad6a9;
+          i{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            display: inline-block;
+            border-top: 19/@rem solid #ffffff;
+            border-left: 19/@rem solid transparent;
+            border-right: 19/@rem solid transparent;
+            width: 0;
+            height: 0;
+          }
+        }
+      }
+      p{
+        clear: both;
+        padding-top: 17/@rem;
+        padding-left: 220/@rem;
+        font-size: 24/@rem;
+        color: #f4285d;
+        text-align: left;
+      }
+    }
+  }
+  button{
+    margin-top: 81/@rem;
+    border-radius: 10/@rem;
+    -webkit-border-radius: 10/@rem;
+    width:480/@rem;
+    height: 76/@rem;
+    background-color: #5ad6a9;
+    color: #ffffff;
+    font-size: 36/@rem;
+  }
+}
+.modal-box{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.36);
+  .modal-info{
+    position: absolute;
+    left: 50%;
+    top: 380/@rem;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    border-radius: 6/@rem;
+    width: 320/@rem;
+    height: 82/@rem;
+    background-color: #000;
+    line-height: 82/@rem;
+    font-size: 26/@rem;
+    color: #ffffff;
+    text-align: center;
+  }
+}
