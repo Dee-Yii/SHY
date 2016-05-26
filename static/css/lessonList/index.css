@@ -4,6 +4,7 @@
   content: "";
 }
 ul {
+  padding-top: 0.04266667rem;
   width: 100%;
 }
 ul li {
@@ -22,10 +23,10 @@ ul li a::after {
   content: "";
 }
 ul li a .img-box {
-  margin-right: 0.0896rem;
+  margin-right: 0.08533333rem;
   float: left;
-  width: 0.512rem;
-  height: 0.34133333rem;
+  width: 0.768rem;
+  height: 0.512rem;
 }
 ul li a .img-box img {
   width: 100%;
@@ -38,9 +39,9 @@ ul li a .text-box p {
   text-align: left;
 }
 ul li a .text-box .title-one {
-  padding-bottom: 0.13653333rem;
-  font-size: 0.11946667rem;
-  color: #1a1a1a;
+  padding-bottom: 0.21333333rem;
+  font-size: 0.13653333rem;
+  color: #3a3a3a;
 }
 ul li a .text-box .title-two {
   font-size: 0.1024rem;
