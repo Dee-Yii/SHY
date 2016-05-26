@@ -17,7 +17,7 @@ h3 {
   width: 100%;
   text-align: center;
 }
-.introduction p {
+.introduction .lessonTitle {
   padding: 0.128rem 0;
   text-align: left;
   font-size: 0.10666667rem;
@@ -32,17 +32,18 @@ h3 {
 .introduction .more-text {
   display: none;
 }
-.introduction button {
-  margin-top: 0.1536rem;
+.introduction .showMore {
+  margin: 0.1536rem auto 0 auto;
   border: 1px solid #5ad6a9;
   border-radius: 0.1152rem;
   width: 0.73386667rem;
   height: 0.23893333rem;
+  line-height: 0.23893333rem;
   background-color: transparent;
   font-size: 0.11093333rem;
   color: #5ad6a9;
 }
-.introduction button i {
+.introduction .showMore i {
   margin-right: 0.09386667rem;
   display: inline-block;
   width: 0.1024rem;

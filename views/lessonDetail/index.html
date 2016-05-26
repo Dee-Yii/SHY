@@ -49,10 +49,10 @@
 </div>
 <h3>沙画</h3>
 <div class="introduction">
-    <p>课程概述</p>
+    <p class="lessonTitle">课程概述</p>
     <div class="lesson-text">沙画，即用沙子做画。是一门独特的艺术。它结合现代人的审美观，依托深厚的文化底蕴和文化内涵；采用产自神奇大自然的天然彩沙，经手工精致而成。</div>
     <div class="lesson-text more-text">沙画，即用沙子做画。是一门独特的艺术。它结合现代人的审美观，依托深厚的文化底蕴和文化内涵；采用产自神奇大自然的天然彩沙，经手工精致而成。</div>
-    <button><i></i>展开</button>
+    <p class="showMore"><i></i><span class="moreBtn">展开</span></p>
 </div>
 <div class="lesson-info">上课时间：<span class="time">星期三下午</span></div>
 <div class="lesson-info">上课老师：<span class="teacher">王老师</span></div>
@@ -68,12 +68,12 @@
 <script src="../../static/js/public/public.js"></script>
 <script>
     $(function (){
-        $("button").on("click",function (){
+        $(".showMore").on("click",function (){
             if($(".more-text").css("display") == "block"){
-                $(this).text("展开");
+                $(".moreBtn").text("展开");
                 $(".more-text").hide();
             }else{
-                $(this).text("收起");
+                $(".moreBtn").text("收起");
                 $(".more-text").show();
             }
         });

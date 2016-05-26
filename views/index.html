@@ -88,7 +88,7 @@
 			</div>
 			<div class="more-text">同一片蓝天下，他们拥有一样的童年，心中却怀着不一样的童话与梦幻。由国际少儿美术协会（ICAA）主办的第八届国际少儿书画大赛征稿活动已经开始。</div>
 		</a>
-		<button>展开详细</button>
+		<p class="showMore"><i></i><span class="showMoreButn">展开</span></p>
 	</li>
 	<li>
 		<a href="#">
@@ -99,7 +99,7 @@
 			</div>
 			<div class="more-text">同一片蓝天下，他们拥有一样的童年，心中却怀着不一样的童话与梦幻。由国际少儿美术协会（ICAA）主办的第八届国际少儿书画大赛征稿活动已经开始。</div>
 		</a>
-		<button>展开详细</button>
+		<p class="showMore"><i></i><span class="showMoreButn">展开</span></p>
 	</li>
 	<li>
 		<a href="#">
@@ -110,7 +110,7 @@
 			</div>
 			<div class="more-text">同一片蓝天下，他们拥有一样的童年，心中却怀着不一样的童话与梦幻。由国际少儿美术协会（ICAA）主办的第八届国际少儿书画大赛征稿活动已经开始。</div>
 		</a>
-		<button>展开详细</button>
+		<p class="showMore"><i></i><span class="showMoreButn">展开</span></p>
 	</li>
 	<li>
 		<a href="#">
@@ -121,7 +121,7 @@
 			</div>
 			<div class="more-text">同一片蓝天下，他们拥有一样的童年，心中却怀着不一样的童话与梦幻。由国际少儿美术协会（ICAA）主办的第八届国际少儿书画大赛征稿活动已经开始。</div>
 		</a>
-		<button>展开详细</button>
+		<p class="showMore"><i></i><span class="showMoreButn">展开</span></p>
 	</li>
 	<li>
 		<a href="#">
@@ -132,7 +132,7 @@
 			</div>
 			<div class="more-text">同一片蓝天下，他们拥有一样的童年，心中却怀着不一样的童话与梦幻。由国际少儿美术协会（ICAA）主办的第八届国际少儿书画大赛征稿活动已经开始。</div>
 		</a>
-		<button>展开详细</button>
+		<p class="showMore"><i></i><span class="showMoreButn">展开</span></p>
 	</li>
 </ul>
 <div class="swiper-container-advertisement">
@@ -151,15 +151,15 @@
 <script src="../static/js/public/public.js"></script>
 <script>
 	$(function (){
-		$("ul li button").on("click",function (){
+		$(".showMore").on("click",function (){
 			var index = $(this).parent("li").index();
 			var $moreText = $(".more-text").eq(index);
 			console.log(index);
 			if($moreText.css("display") == "none"){
-				$(this).html("收起详细");
+				$(".showMoreButn").html("收起");
 				$moreText.show();
 			}else{
-				$(this).html("展开详细");
+				$(".showMoreButn").html("展开");
 				$moreText.hide();
 			}
 
