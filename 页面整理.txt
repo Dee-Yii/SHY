@@ -1,0 +1,12 @@
+完成页面：
+    1、课程列表页：lessonList
+    2、课程介绍：lessonIntroduction
+
+问题页面：
+    1、业余活动页：activeList   下拉菜单功能点不明确
+    2、选课结果处理页面：handleResult   点击返回首页的a链接href未填路径
+    3、课程详情页：lessonDetail   样式需要重新调整
+    4、我的课程：myLesson   整个页面需要重新调整
+    5、学生选课：studentChoose  选课功能的逻辑不明确js没有加
+    6、首页：index.html   样式需要重新调整
+    7、登陆页：login.html  下拉菜单未实现，验证规则不明确还未加验证功能
