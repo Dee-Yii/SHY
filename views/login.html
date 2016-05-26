@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>登陆</title>
+	<link rel="stylesheet" href="../static/css/public/common.css"/>
+	<link rel="stylesheet" href="../static/css/public/public.css"/>
+	<link rel="stylesheet" href="../static/css/login.css">
+	<script>
+	(function(doc, win) {
+		var docEl = doc.documentElement,
+			isIOS = navigator.userAgent.match(/iphone|ipod|ipad/gi),
+			dpr = isIOS ? Math.min(win.devicePixelRatio, 3) : 1,
+			//dpr = window.top === window.self ? dpr : 1, //被iframe引用时，禁止缩放
+			scale = 1 / dpr,
+			resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+			docEl.dataset.dpr = dpr;
+		var recalc = function() {
+			var width = docEl.clientWidth;
+			if (width / dpr > 640) {
+				width = 640 * dpr;
+			}
+			window.remScale =  width / 640;//缩放比例，用于JS设置大小时进行等比缩放
+			docEl.style.fontSize = 200 * (width / 640) + 'px';
+		};
+		recalc();
+		if (!doc.addEventListener) return;
+		win.addEventListener(resizeEvt, recalc, false);
+	})(document, window);
+	</script>
+</head>
+<body>
+	<header>
+		<a class="back" href="javascript:;" ></a>
+		登录
+	</header>
+	<section>
+		<ul>
+			<li>
+				<div class="left">角色：</div>
+				<div class="right">
+					<span class="select-btn"><i></i></span>
+				</div>
+			</li>
+			<li>
+				<div class="left">账号：</div>
+				<div class="right">
+					<input type="text"/>
+				</div>
+			</li>
+			<li>
+				<div class="left">密码：</div>
+				<div class="right">
+					<input type="text"/>
+				</div>
+			</li>
+			<li>
+				<div class="left">新密码：</div>
+				<div class="right">
+					<input type="text"/>
+				</div>
+				<p>初次登陆，请修改新密码！</p>
+			</li>
+		</ul>
+		<button>登陆</button>
+	</section>
+	<div class="modal-box">
+		<div class="modal-info">账号或密码错误！</div>
+	</div>
+</body>
+</html>
