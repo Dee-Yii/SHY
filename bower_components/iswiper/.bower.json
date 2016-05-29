@@ -1,0 +1,47 @@
+{
+  "name": "iswiper",
+  "description": "为移动端而生的滑动框架，无依赖，轻盈小巧，性能极致",
+  "version": "1.4.1",
+  "author": "wechat ui team",
+  "keywords": [
+    "iswiper",
+    "swiper",
+    "swipe",
+    "slider",
+    "mobile",
+    "framework"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wechatui/swiper.git"
+  },
+  "homepage": "http://wechatui.github.io/swiper",
+  "scripts": [
+    "dist/swiper.js"
+  ],
+  "main": [
+    "dist/swiper.js"
+  ],
+  "ignore": [
+    "/.*",
+    "gulpfile.js",
+    "node_modules",
+    "package.json",
+    "**/.*",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "license": [
+    "MIT"
+  ],
+  "_release": "1.4.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.4.1",
+    "commit": "f0c048e6d3877d724383b9bcbeaaedb2ab69e30e"
+  },
+  "_source": "https://github.com/wechatui/swiper.git",
+  "_target": "^1.4.1",
+  "_originalSource": "https://github.com/wechatui/swiper.git"
+}

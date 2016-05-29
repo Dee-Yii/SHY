@@ -103,7 +103,7 @@ li {
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #ccc;
-  text-align: right;
+  text-align: left;
   line-height: 1.5em;
   font-family: "Helvetica Neue", Helvetica, Hiragino Sans GB, "Microsoft Yahei", STHeiTi, Arial, sans-serif;
 }
