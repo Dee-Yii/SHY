@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>业余活动报名</title>
+    <link rel="stylesheet" href="../../static/css/public/common.css"/>
+    <link rel="stylesheet" href="../../static/css/public/public.css"/>
+    <link rel="stylesheet" href="../../static/css/yeyuActive/index.css"/>
+    <script>
+        (function(doc, win) {
+            var docEl = doc.documentElement,
+                    isIOS = navigator.userAgent.match(/iphone|ipod|ipad/gi),
+                    dpr = isIOS ? Math.min(win.devicePixelRatio, 3) : 1,
+            //dpr = window.top === window.self ? dpr : 1, //被iframe引用时，禁止缩放
+                    scale = 1 / dpr,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            docEl.dataset.dpr = dpr;
+            var recalc = function() {
+                var width = docEl.clientWidth;
+                if (width / dpr > 640) {
+                    width = 640 * dpr;
+                }
+                window.remScale =  width / 640;//缩放比例，用于JS设置大小时进行等比缩放
+                docEl.style.fontSize = 200 * (width / 640) + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body>
+<div class="containt-box">
+    <header>
+        <a class="back" href="javascript:;" ></a>
+        业余活动
+    </header>
+    <h3 class="activeDetail-title">比赛详情</h3>
+    <div class="activeInstroductionBox">
+        <p class="active-instroduction">
+            第五届CIP国际少儿才艺大赛是最权威、最高规格、高品质的顶尖少儿赛事、艺术界各路诸侯切磋才艺的一场盛会，一场少儿界顶尖的试听盛宴。本届活动将全面展示少年儿童阳光、自信、快乐气质和多才多艺的青春风事、艺乐气质和多才才艺
+            第五届CIP国际少儿才艺大赛是最权威、最高规格、高品质的顶尖少儿赛事、艺术界各路诸侯切磋才艺的一场盛会，一场少儿界顶尖的试听盛宴。本届活动将全面展示少年儿童阳光、自信、快乐气质和多才多艺的青春风事、艺乐气质和多才才艺
+        </p>
+        <button class="showMore-butn"><i></i>展开</button>
+    </div>
+    <div class="enterBox">
+        <i></i>
+        <div class="enter-innerbox">
+            <h3>我要报名</h3>
+            <table>
+                <tr>
+                    <td class="table-left">姓名：</td>
+                    <td colspan="3" class="table-right-one">
+                        <input type="text" class="name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table-left">性别：</td>
+                    <td class="table-sex">
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

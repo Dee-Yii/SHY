@@ -35,53 +35,65 @@
     <a class="back" href="javascript:;" ></a>
     我的课程
 </header>
-<section>
-    <!--未选课状态-->
-    <div class="noLesson">
-        <div class="image"></div>
-        <a href="#">我要选课</a>
+<!--未选课状态-->
+<div class="noLesson">
+    <div class="image"></div>
+    <a href="#">我要选课</a>
+</div>
+<!--未选课状态-->
+<div class="hasLesson">
+    <i class="rope rope-left"></i>
+    <i class="rope rope-right"></i>
+    <div class="myLessonBox">
+        <ul>
+            <li>
+                <p>星期一</p>
+                <div>沙画</div>
+            </li>
+            <li>
+                <p>星期二</p>
+                <div>沙画</div>
+            </li>
+            <li>
+                <p>星期三</p>
+                <div>沙画</div>
+            </li>
+            <li>
+                <p>星期四</p>
+                <div>沙画</div>
+            </li>
+            <li>
+                <p>星期五</p>
+                <div>沙画</div>
+            </li>
+        </ul>
     </div>
-    <!--未选课状态-->
-    <div class="hasLesson">
-        <div class="lessonBox">
-            <div class="timeAddress">
-                <div>上课时间：<span>星期二下午</span></div>
-                <div>上课地点：<span>郁文楼A201</span></div>
-            </div>
-            <div class="lessonContent">
-                <p>上课用具：<span>沙画台</span></p>
-                <ul>
-                    <li>沙子</li>
-                </ul>
-                <a href="javascript:void(0);">购买</a>
-            </div>
-        </div>
-        <p class="myLesson-title">我的课程</p>
-        <div class="myLessonBox">
-            <ul>
-                <li>
-                    <p>星期一</p>
-                    <div>沙画</div>
-                </li>
-                <li>
-                    <p>星期二</p>
-                    <div>沙画</div>
-                </li>
-                <li>
-                    <p>星期三</p>
-                    <div>沙画</div>
-                </li>
-                <li>
-                    <p>星期四</p>
-                    <div>沙画</div>
-                </li>
-                <li>
-                    <p>星期五</p>
-                    <div>沙画</div>
-                </li>
-            </ul>
-        </div>
+    <div class="lessonBox">
+        <table>
+            <tr>
+                <th colspan="2">沙画</th>
+            </tr>
+            <tr>
+                <td>上课时间：<span class="lesson-time">星期二下午</span></td>
+                <td>上课地点：<span class="lesson-address">逸夫楼A703</span></td>
+            </tr>
+            <tr>
+                <td>上课老师：<span class="lesson-teacher">王老师</span></td>
+                <td>适合年级：<span class="lesson-grade">一年级</span></td>
+            </tr>
+            <tr class="lessonToolBox">
+                <td colspan="2">
+                    <p>上课用具：</p>
+                    <ul>
+                        <li>沙画台</li>
+                        <li>沙子</li>
+                    </ul>
+                    <button class="buy-button">购买</button>
+                </td>
+            </tr>
+        </table>
     </div>
-</section>
+    <button class="cancel-button">取消报名</button>
+</div>
 </body>
 </html>
