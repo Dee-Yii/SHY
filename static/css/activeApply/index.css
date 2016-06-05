@@ -1,0 +1,193 @@
+.clearfix {
+  display: table;
+  clear: both;
+  content: '';
+}
+.containt-box {
+  background-color: #f0f0f0;
+}
+.activeDetail-title {
+  padding: 0.17066667rem 0 0.13653333rem 0.1024rem;
+  font-size: 0.13653333rem;
+  color: #323232;
+  text-align: left;
+  background-color: #ffffff;
+}
+.activeInstroductionBox {
+  padding: 0 0.1024rem 0.3072rem 0.1024rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+.activeInstroductionBox p {
+  font-size: 0.11093333rem;
+  color: #747474;
+  line-height: 0.1792rem;
+  height: 0.68266667rem;
+  text-align: justify;
+  overflow: hidden;
+}
+.activeInstroductionBox .showMore-butn {
+  margin-top: 0.17066667rem;
+  padding: 0 0.17066667rem;
+  -webkit-border-radius: 0.1152rem;
+  -moz-border-radius: 0.1152rem;
+  border-radius: 0.1152rem;
+  border: 1px solid #3bbe8e;
+  height: 0.2304rem;
+  line-height: 0.2304rem;
+  background-color: #ffffff;
+  color: #3bbe8e;
+  font-size: 0.1024rem;
+}
+.activeInstroductionBox .showMore-butn i {
+  margin-right: 0.128rem;
+  display: inline-block;
+  width: 0.1024rem;
+  height: 0.1024rem;
+  background-image: url("../../images/activeApply/more.png");
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
+.activeInstroductionBox .showMore-butn span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.enterBox {
+  margin-top: 0.08533333rem;
+  padding: 0 0.128rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+.enterBox i {
+  display: inline-block;
+  margin-top: -0.0512rem;
+  width: 1.07093333rem;
+  height: 0.25173333rem;
+  background-image: url("../../images/activeApply/menu.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.enterBox .enter-innerbox {
+  position: relative;
+  z-index: 10;
+  margin-top: -0.01706667rem;
+  padding: 0 0.0896rem 0.11093333rem 0.0896rem;
+  -webkit-border-radius: 0.08533333rem;
+  -moz-border-radius: 0.08533333rem;
+  border-radius: 0.08533333rem;
+  background-color: #f0f8f9;
+  box-shadow: 0 0.01706667rem 0.01706667rem 0 rgba(0, 0, 0, 0.32);
+}
+.enterBox .enter-innerbox h3 {
+  padding: 0.2048rem 0 0.04266667rem 0;
+  font-size: 0.14506667rem;
+  color: #323232;
+}
+.enterBox .enter-innerbox table tr {
+  display: block;
+  margin-top: 0.17066667rem;
+}
+.enterBox .enter-innerbox table tr td {
+  font-size: 0.11946667rem;
+  color: #4f4f4f;
+}
+.enterBox .enter-innerbox table .table-left {
+  font-size: 0.11946667rem;
+  color: #4f4f4f;
+  text-align: left;
+}
+.enterBox .enter-innerbox table .table-right-one {
+  width: 2.3808rem;
+  height: 0.3072rem;
+}
+.enterBox .enter-innerbox table .table-sex {
+  position: relative;
+  padding-left: 0.04266667rem;
+}
+.enterBox .enter-innerbox table .name,
+.enterBox .enter-innerbox table .age,
+.enterBox .enter-innerbox table .tel {
+  padding-left: 0.08533333rem;
+  -webkit-border-radius: 0.04266667rem;
+  -moz-border-radius: 0.04266667rem;
+  border-radius: 0.04266667rem;
+  border: 1px solid #bcbcbc;
+  height: 0.29866667rem;
+}
+.enterBox .enter-innerbox table .name,
+.enterBox .enter-innerbox table .tel {
+  width: 2.29546667rem;
+}
+.enterBox .enter-innerbox table .sex {
+  padding-left: 0.08533333rem;
+  -webkit-border-radius: 0.04266667rem;
+  -moz-border-radius: 0.04266667rem;
+  border-radius: 0.04266667rem;
+  border: 1px solid #bcbcbc;
+  width: 0.9472rem;
+  height: 0.3072rem;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.enterBox .enter-innerbox table .sex::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.enterBox .enter-innerbox table .sex .selected {
+  float: left;
+  text-align: left;
+  line-height: 0.3072rem;
+}
+.enterBox .enter-innerbox table .sex .select-btn {
+  position: relative;
+  float: right;
+  display: inline-block;
+  width: 0.3072rem;
+  height: 0.3072rem;
+  background-color: #7fb4ef;
+}
+.enterBox .enter-innerbox table .sex .select-btn i {
+  position: absolute;
+  top: 0.17066667rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 0.0512rem solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+.enterBox .enter-innerbox table .J_roleList {
+  display: none;
+  position: absolute;
+  top: 0.30293333rem;
+  left: 0.04266667rem;
+  border-left: 1px solid #bcbcbc;
+  border-right: 1px solid #bcbcbc;
+  border-top: 1px solid #bcbcbc;
+  background-color: #ffffff;
+}
+.enterBox .enter-innerbox table .J_roleList li {
+  width: 0.9472rem;
+  height: 0.3072rem;
+  border-bottom: 1px solid #bcbcbc;
+  line-height: 0.3072rem;
+}
+.enterBox .enter-innerbox table .table-age-title {
+  padding-left: 0.17066667rem;
+}
+.enterBox .enter-innerbox table .age {
+  width: 0.78506667rem;
+}
+.enterBox .enter-innerbox .enter-btn {
+  margin-top: 0.256rem;
+  border-radius: 0.04266667rem;
+  -webkit-border-radius: 0.04266667rem;
+  width: 1.36533333rem;
+  height: 0.3328rem;
+  background-color: #7fb4ef;
+  color: #ffffff;
+  font-size: 0.128rem;
+}

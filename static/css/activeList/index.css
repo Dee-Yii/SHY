@@ -73,11 +73,11 @@ header .list-menu li a span {
   vertical-align: middle;
 }
 .active-list {
-  padding: 0.04266667rem 0.09386667rem 0 0.09386667rem;
+  padding: 0.04266667rem 0.09386667rem 0.512rem 0.09386667rem;
   width: 100%;
 }
 .active-list li {
-  padding: 0.1408rem 0;
+  padding: 0.128rem 0;
   border-bottom: 1px solid #e1e1e1;
 }
 .active-list li a {
@@ -91,8 +91,8 @@ header .list-menu li a span {
 }
 .active-list li a img {
   float: left;
-  width: 0.512rem;
-  height: 0.34133333rem;
+  width: 0.768rem;
+  height: 0.512rem;
 }
 .active-list li a .active-box {
   float: left;
@@ -100,11 +100,28 @@ header .list-menu li a span {
   text-align: left;
 }
 .active-list li a .active-box .active-name {
-  font-size: 0.11946667rem;
-  color: #1a1a1a;
+  padding-top: 0.00853333rem;
+  font-size: 0.13653333rem;
+  color: #3a3a3a;
 }
 .active-list li a .active-box .active-time {
-  padding-top: 0.13653333rem;
+  padding-top: 0.21333333rem;
   font-size: 0.1024rem;
-  color: #9a9a9a;
+  color: #7d7d7d;
+}
+.myApply {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  display: inline-block;
+  border-radius: 0.08533333rem;
+  width: 3.11466667rem;
+  height: 0.4864rem;
+  background-color: #32c690;
+  color: #ffffff;
+  font-size: 0.14506667rem;
+  line-height: 0.4864rem;
+  text-align: center;
 }

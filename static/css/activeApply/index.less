@@ -1,0 +1,191 @@
+@rem:200*750/640rem;
+.clearfix{
+  display: table;
+  clear: both;
+  content: '';
+}
+.containt-box{
+  background-color: #f0f0f0;
+}
+.activeDetail-title{
+  padding:40/@rem 0 32/@rem 24/@rem;
+  font-size: 32/@rem;
+  color: #323232;
+  text-align: left;
+  background-color: #ffffff;
+}
+.activeInstroductionBox{
+  padding: 0 24/@rem 72/@rem 24/@rem;
+  text-align: center;
+  background-color: #ffffff;
+  p{
+    font-size: 26/@rem;
+    color: #747474;
+    line-height: 42/@rem;
+    height: 160/@rem;
+    text-align: justify;
+    overflow: hidden;
+  }
+  .showMore-butn{
+    margin-top: 40/@rem;
+    padding: 0 40/@rem;
+    -webkit-border-radius: 27/@rem;
+    -moz-border-radius: 27/@rem;
+    border-radius: 27/@rem;
+    border: 1px solid #3bbe8e;
+    height: 54/@rem;
+    line-height: 54/@rem;
+    background-color: #ffffff;
+    color: #3bbe8e;
+    font-size: 24/@rem;
+    i{
+      margin-right: 30/@rem;
+      display: inline-block;
+      width: 24/@rem;
+      height: 24/@rem;
+      background-image: url("../../images/activeApply/more.png");
+      background-size: 100% 100%;
+      vertical-align: middle;
+    }
+    span{
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+.enterBox{
+  margin-top: 20/@rem;
+  padding: 0 30/@rem;
+  background-color: #ffffff;
+  text-align: center;
+  i{
+    display: inline-block;
+    margin-top: -12/@rem;
+    width: 251/@rem;
+    height: 59/@rem;
+    background-image: url("../../images/activeApply/menu.png");
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+  .enter-innerbox{
+    position: relative;
+    z-index: 10;
+    margin-top: -4/@rem;
+    padding: 0 21/@rem 26/@rem 21/@rem;
+    -webkit-border-radius: 20/@rem;
+    -moz-border-radius: 20/@rem;
+    border-radius: 20/@rem;
+    background-color: #f0f8f9;
+    box-shadow: 0 4/@rem 4/@rem 0 rgba(0,0,0,.32);
+    h3{
+      padding: 48/@rem 0 10/@rem 0;
+      font-size: 34/@rem;
+      color: #323232;
+    }
+    table{
+      tr{
+        display: block;
+        margin-top: 40/@rem;
+        td{
+          font-size: 28/@rem;
+          color: #4f4f4f;
+        }
+      }
+      .table-left{
+        font-size: 28/@rem;
+        color: #4f4f4f;
+        text-align: left;
+      }
+      .table-right-one{
+        width: 558/@rem;
+        height: 72/@rem;
+      }
+      .table-sex{
+        position: relative;
+        padding-left: 10/@rem;
+      }
+      .name,.age,.tel{
+        padding-left: 20/@rem;
+        -webkit-border-radius: 10/@rem;
+        -moz-border-radius: 10/@rem;
+        border-radius: 10/@rem;
+        border: 1px solid #bcbcbc;
+        height: 70/@rem;
+      }
+      .name,.tel{
+        width: 538/@rem;
+      }
+      .sex{
+        padding-left: 20/@rem;
+        -webkit-border-radius: 10/@rem;
+        -moz-border-radius: 10/@rem;
+        border-radius: 10/@rem;
+        border: 1px solid #bcbcbc;
+        width: 222/@rem;
+        height: 72/@rem;
+        background-color: #ffffff;
+        overflow: hidden;
+        &::after{
+          .clearfix;
+        }
+        .selected{
+          float: left;
+          text-align: left;
+          line-height: 72/@rem;
+        }
+        .select-btn{
+          position: relative;
+          float: right;
+          display: inline-block;
+          width: 72/@rem;
+          height: 72/@rem;
+          background-color: #7fb4ef;
+          i{
+            position: absolute;
+            top: 40/@rem;
+            left: 50%;
+            -webkit-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: 12/@rem solid;
+            border-color: #ffffff transparent transparent transparent;
+          }
+        }
+      }
+      .J_roleList{
+        display: none;
+        position: absolute;
+        top: 71/@rem;
+        left: 10/@rem;
+        border-left: 1px solid #bcbcbc;
+        border-right: 1px solid #bcbcbc;
+        border-top: 1px solid #bcbcbc;
+        background-color: #ffffff;
+        li{
+          width: 222/@rem;
+          height: 72/@rem;
+          border-bottom: 1px solid #bcbcbc;
+          line-height: 72/@rem;
+        }
+      }
+      .table-age-title{
+        padding-left: 40/@rem;
+      }
+      .age{
+        width: 184/@rem;
+      }
+    }
+    .enter-btn{
+      margin-top: 60/@rem;
+      border-radius: 10/@rem;
+      -webkit-border-radius: 10/@rem;
+      width: 320/@rem;
+      height: 78/@rem;
+      background-color: #7fb4ef;
+      color: #ffffff;
+      font-size: 30/@rem;
+    }
+  }
+}

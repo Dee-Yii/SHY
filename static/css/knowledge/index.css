@@ -1,0 +1,104 @@
+.clearfix {
+  display: table;
+  clear: both;
+  content: "";
+}
+section {
+  padding-top: 0.128rem;
+  text-align: center;
+}
+section .search-box {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 0.08533333rem;
+  -webkit-border-radius: 0.08533333rem;
+  border: 1px solid #888888;
+  width: 3.00373333rem;
+  height: 0.32426667rem;
+  overflow: hidden;
+}
+section .search-box .search-text {
+  padding-left: 0.08106667rem;
+  width: 100%;
+  height: 100%;
+  font-size: 0.11093333rem;
+  color: #c8c8c8;
+  line-height: 0.32426667rem;
+}
+section .search-box .search-btn {
+  position: absolute;
+  top: 50%;
+  right: 0.08533333rem;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  display: inline-block;
+  width: 0.11946667rem;
+  height: 0.11946667rem;
+  background-image: url("../../images/knowledge/knowledge.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+section ul {
+  padding: 0.04266667rem 0.09386667rem 0 0.09386667rem;
+}
+section ul li {
+  padding: 0.128rem 0;
+  border-bottom: 0.00853333rem solid #f2f2f2;
+}
+section ul li a {
+  position: relative;
+  display: block;
+}
+section ul li a::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+section ul li a img {
+  float: left;
+  width: 0.512rem;
+  height: 0.512rem;
+}
+section ul li a .knowledge-introduction-box {
+  float: left;
+  margin-left: 0.08533333rem;
+}
+section ul li a .knowledge-introduction-box h3 {
+  padding-bottom: 0.2048rem;
+  font-size: 0.13653333rem;
+  text-align: left;
+  color: #3a3a3a;
+  font-weight: normal;
+}
+section ul li a .knowledge-introduction-box p {
+  font-size: 0.1024rem;
+  color: #7d7d7d;
+  text-align: left;
+}
+section ul li a .more-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 0.1152rem;
+  border-radius: 0.10666667rem;
+  -webkit-border-radius: 0.10666667rem;
+  border: 1px solid #98d8bd;
+  height: 0.21333333rem;
+  background-color: #ffffff;
+}
+section ul li a .more-btn i {
+  display: inline-block;
+  width: 0.1024rem;
+  height: 0.1024rem;
+  background-image: url("../../images/knowledge/more.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
+section ul li a .more-btn span {
+  display: inline-block;
+  padding-left: 0.04693333rem;
+  font-size: 0.11093333rem;
+  color: #3bbe8e;
+  vertical-align: middle;
+}

@@ -6,7 +6,7 @@
     <title>业余活动报名</title>
     <link rel="stylesheet" href="../../static/css/public/common.css"/>
     <link rel="stylesheet" href="../../static/css/public/public.css"/>
-    <link rel="stylesheet" href="../../static/css/yeyuActive/index.css"/>
+    <link rel="stylesheet" href="../../static/css/activeApply/index.css"/>
     <script>
         (function(doc, win) {
             var docEl = doc.documentElement,
@@ -42,7 +42,7 @@
             第五届CIP国际少儿才艺大赛是最权威、最高规格、高品质的顶尖少儿赛事、艺术界各路诸侯切磋才艺的一场盛会，一场少儿界顶尖的试听盛宴。本届活动将全面展示少年儿童阳光、自信、快乐气质和多才多艺的青春风事、艺乐气质和多才才艺
             第五届CIP国际少儿才艺大赛是最权威、最高规格、高品质的顶尖少儿赛事、艺术界各路诸侯切磋才艺的一场盛会，一场少儿界顶尖的试听盛宴。本届活动将全面展示少年儿童阳光、自信、快乐气质和多才多艺的青春风事、艺乐气质和多才才艺
         </p>
-        <button class="showMore-butn"><i></i>展开</button>
+        <button class="showMore-butn"><i></i><span>展开</span></button>
     </div>
     <div class="enterBox">
         <i></i>
@@ -58,12 +58,49 @@
                 <tr>
                     <td class="table-left">性别：</td>
                     <td class="table-sex">
-                        
+                        <div class="sex current">
+                            <span class="selected J_role role" data-roleType="">男</span>
+                            <span class="select-btn"><i></i></span>
+                        </div>
+                        <ul class="J_roleList role-list">
+                            <li data-roleType="1">男</li>
+                            <li data-roleType="2">女</li>
+                        </ul>
+                    </td>
+                    <td class="table-left table-age-title">年龄：</td>
+                    <td class="table-age">
+                        <input type="text" class="age"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table-left">电话：</td>
+                    <td colspan="3" class="table-right-one">
+                        <input type="text" class="tel"/>
                     </td>
                 </tr>
             </table>
+            <button class="enter-btn">我要报名</button>
         </div>
     </div>
 </div>
 </body>
+<script src="../../static/js/public/zepto.min.js"></script>
+<script>
+    $(function (){
+        $(".sex").on("click",function (){
+            if($(this).hasClass("current")){
+                $(this).removeClass("current");
+                $(".role-list").show();
+            }else{
+                $(this).addClass("current");
+                $(".role-list").hide();
+            }
+        });
+        $(".J_roleList li").on("click", function () {
+            var txt = $(this).text();
+            var roleType = $(this).attr("data-roleType");
+            $(".J_role").text(txt).attr("data-roleType",roleType).trigger("click");
+        });
+    });
+</script>
 </html>
