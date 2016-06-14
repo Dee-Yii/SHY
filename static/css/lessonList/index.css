@@ -3,8 +3,34 @@
   clear: both;
   content: "";
 }
+.lesson-nav {
+  padding: 0 0.09386667rem;
+  position: fixed;
+  top: 0.3584rem;
+  left: 0;
+  border-bottom: 1px solid #dddddd;
+  width: 100%;
+  height: 0.37546667rem;
+  background-color: #f6f6f6;
+}
+.lesson-nav::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.lesson-nav a {
+  display: inline-block;
+  float: left;
+  width: 0.75093333rem;
+  height: 0.3584rem;
+  line-height: 0.3584rem;
+  font-size: 0.13653333rem;
+  color: #989898;
+  text-align: center;
+}
 ul {
-  padding-top: 0.04266667rem;
+  display: none;
+  padding-top: 0.40106667rem;
   width: 100%;
 }
 ul li {
@@ -46,4 +72,11 @@ ul li a .text-box .title-one {
 ul li a .text-box .title-two {
   font-size: 0.1024rem;
   color: #7d7d7d;
+}
+ul.lesson-all {
+  display: block;
+}
+.active {
+  border-bottom: 0.01706667rem solid #ee164e;
+  color: #3e3e3e !important;
 }

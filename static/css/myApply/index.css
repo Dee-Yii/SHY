@@ -30,10 +30,14 @@
   line-height: 0.27306667rem;
 }
 .hasApplied ul.nav {
+  position: fixed;
+  top: 0.3584rem;
+  left: 0;
   padding-left: 0.09386667rem;
   border-bottom: 1px solid #dddddd;
   width: 100%;
   height: 0.2944rem;
+  background-color: #f6f6f6;
 }
 .hasApplied ul.nav::after {
   display: table;
@@ -52,9 +56,10 @@
 }
 .hasApplied ul.nav li.active {
   color: #3e3e3e !important;
-  border-bottom: 0.01706667rem solid #43bf92;
+  border-bottom: 0.01706667rem solid #ee164e;
 }
 .hasApplied .content {
+  padding-top: 0.29866667rem;
   display: none;
 }
 .hasApplied .content ul {

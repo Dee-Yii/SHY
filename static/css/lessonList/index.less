@@ -4,8 +4,32 @@
   clear: both;
   content: "";
 }
+.lesson-nav{
+  padding: 0 22/@rem;
+  position: fixed;
+  top: 84/@rem;
+  left: 0;
+  border-bottom: 1px solid #dddddd;
+  width: 100%;
+  height: 88/@rem;
+  background-color: #f6f6f6;
+  &::after{
+    .clearfix;
+  }
+  a{
+    display: inline-block;
+    float: left;
+    width: 176/@rem;
+    height: 84/@rem;
+    line-height: 84/@rem;
+    font-size: 32/@rem;
+    color: #989898;
+    text-align: center;
+  }
+}
 ul{
-  padding-top: 10/@rem;
+  display: none;
+  padding-top: 94/@rem;
   width: 100%;
   li{
     padding: 0 22/@rem;
@@ -45,4 +69,11 @@ ul{
       }
     }
   }
+}
+ul.lesson-all{
+  display: block;
+}
+.active{
+  border-bottom: 4/@rem solid #ee164e;
+  color: #3e3e3e !important;
 }

@@ -3,8 +3,15 @@
   clear: both;
   content: "";
 }
+body {
+  background-color: #fafafa;
+}
+.content-box {
+  border-bottom: 1px solid #f1f1f1;
+  background-color: #fff;
+}
 .lesson-box {
-  padding-top: 0.4352rem;
+  padding-top: 0.03413333rem;
   width: 100%;
 }
 .lesson-box::after {
@@ -13,39 +20,42 @@
   content: "";
 }
 .lesson-box a {
-  float: left;
   display: inline-block;
+  float: left;
+  padding: 0.17066667rem 0;
+  border-top: 1px solid #f1f1f1;
+  width: 50%;
   text-align: center;
+}
+.lesson-box a:nth-child(1) {
+  border-right: 1px solid #f1f1f1;
+}
+.lesson-box a:nth-child(1) i {
+  background-image: url("../../../static/images/lessonInstroduction/lesson1.png");
+}
+.lesson-box a:nth-child(2) i {
+  background-image: url("../../../static/images/lessonInstroduction/lesson2.png");
+}
+.lesson-box a:nth-child(3) {
+  border-right: 1px solid #f1f1f1;
+}
+.lesson-box a:nth-child(3) i {
+  background-image: url("../../../static/images/lessonInstroduction/lesson3.png");
+}
+.lesson-box a:nth-child(4) i {
+  background-image: url("../../../static/images/lessonInstroduction/lesson4.png");
+}
+.lesson-box a i {
+  display: block;
+  margin: 0 auto;
+  width: 0.512rem;
+  height: 0.512rem;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 .lesson-box a p {
   padding-top: 0.08533333rem;
   font-size: 0.128rem;
   color: #1a1a1a;
-}
-.lesson-box .zstz-sjhd {
-  margin: 0 auto;
-  width: 50%;
-}
-.lesson-box .zstz-sjhd i {
-  display: inline-block;
-  width: 0.512rem;
-  height: 0.512rem;
-  background-size: 100% 100%;
-}
-.lesson-box .zstz-sjhd:nth-child(1) i {
-  background-image: url("../../../static/images/lessonInstroduction/lesson1.png");
-}
-.lesson-box .zstz-sjhd:nth-child(2) i {
-  background-image: url("../../../static/images/lessonInstroduction/lesson2.png");
-}
-.lesson-box .tytc {
-  padding-top: 0.256rem;
-  width: 100%;
-}
-.lesson-box .tytc i {
-  display: inline-block;
-  width: 0.68266667rem;
-  height: 0.68266667rem;
-  background-image: url("../../../static/images/lessonInstroduction/lesson3.png");
-  background-size: 100% 100%;
+  text-align: center;
 }

@@ -4,32 +4,28 @@
   clear: both;
   content:"";
 }
+body{
+  background-color: #fafafa;
+}
+.content-box{
+  border-bottom: 1px solid #f1f1f1;
+  background-color:#fff;
+}
 .lesson-box{
-  padding-top: 102/@rem;
+  padding-top: 8/@rem;
   width: 100%;
   &::after{
     .clearfix;
   }
   a{
-    float: left;
     display: inline-block;
-    text-align: center;
-    p{
-      padding-top: 20/@rem;
-      font-size: 30/@rem;
-      color: #1a1a1a;
-    }
-  }
-  .zstz-sjhd{
-    margin: 0 auto;
+    float: left;
+    padding: 40/@rem 0;
+    border-top: 1px solid #f1f1f1;
     width: 50%;
-    i{
-      display: inline-block;
-      width: 120/@rem;
-      height: 120/@rem;
-      background-size: 100% 100%;
-    }
+    text-align: center;
     &:nth-child(1){
+      border-right: 1px solid #f1f1f1;
       i{
         background-image: url("../../../static/images/lessonInstroduction/lesson1.png");
       }
@@ -39,16 +35,32 @@
         background-image: url("../../../static/images/lessonInstroduction/lesson2.png");
       }
     }
-  }
-  .tytc{
-    padding-top: 60/@rem;
-    width: 100%;
+    &:nth-child(3){
+      border-right: 1px solid #f1f1f1;
+      i{
+        background-image: url("../../../static/images/lessonInstroduction/lesson3.png");
+      }
+    }
+    &:nth-child(4){
+      i{
+        background-image: url("../../../static/images/lessonInstroduction/lesson4.png");
+      }
+    }
     i{
-      display: inline-block;
-      width: 160/@rem;
-      height: 160/@rem;
-      background-image: url("../../../static/images/lessonInstroduction/lesson3.png");
+      display: block;
+      margin: 0 auto;
+      width: 120/@rem;
+      height: 120/@rem;
+      -webkit-background-size: 100% 100%;
       background-size: 100% 100%;
     }
+    p{
+      padding-top: 20/@rem;
+      font-size: 30/@rem;
+      color: #1a1a1a;
+      text-align: center;
+    }
   }
+
+
 }
