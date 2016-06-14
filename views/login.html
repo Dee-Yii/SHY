@@ -119,6 +119,7 @@
 	<div class="modal-box">
 		<div class="modal-info">账号或密码错误！</div>
 	</div>
+	<div class='dee-layer dee-layer-alert'><i></i></div>
 </body>
 <script src="../static/js/public/zepto.min.js"></script>
 <script type="text/javascript">
@@ -138,6 +139,22 @@
 		$(".J_role").text(txt).attr("data-roleType",roleType).trigger("click");
 	});
 
+	//弹框
+	var DeeLayer = {
+		alert: function(txt){
+			var timer;
+			var modal = $(".dee-layer-alert");
+			var alertMsg = $(".dee-layer-alert i");
+			// var modal = $("<div class='dee-layer-alert'><i></i></div>").appendTo("body");
+			modal.show();
+			alertMsg.html(txt).removeClass("dee-layer-hide").addClass("dee-layer-show");
+			setTimeout(function(){
+				alertMsg.removeClass("dee-layer-show").addClass("dee-layer-hide");
+				modal.hide();
+			},2000);
+		}
+	}
+
 	// 表单验证
 	var str;
 	var rule = /^[a-zA-Z0-9]{6,12}$/;
@@ -146,9 +163,7 @@
 		var error = $this.parents("li").find(".error");
 		str = $this.val();
 		if(str == ""){
-			error.text("* 帐号不能为空").show();
-		}else{
-			error.hide();
+			DeeLayer.alert("账号不能为空！");//设置弹框内容
 		}
 	});
 	$(".J_password").on("blur", function(){
@@ -157,14 +172,14 @@
 		str = $this.val();
 		if(str == "")
 		{
-			error.text("* 密码不能为空").show();
+			DeeLayer.alert("密码不能为空！");
 		}
 		else if(str.match(rule))
 		{
-			error.hide();
+			return false;
 		}
 		else{
-			error.text("* 密码6-16数字或字母组成").show();
+			DeeLayer.alert("密码6-16数字或字母组成");
 		}
 
 		$("input[name='newPassword']").on("blur", function(){
@@ -176,9 +191,7 @@
 			}else{
 				str = $this.val();
 				if(str != confirmPassword.val()){
-					error.text("* 两次密码输入不一致").show();
-				}else{
-					error.hide();
+					DeeLayer.alert("两次密码输入不一致!");
 				}
 			}
 		});
@@ -187,9 +200,7 @@
 			var newPassword = $("input[name='newPassword']");
 			var error = $(".J_error")
 			if($this.val() != newPassword.val()){
-				error.text("* 两次密码输入不一致").show();
-			}else{
-				error.hide();
+				DeeLayer.alert("两次密码输入不一致!");
 			}
 		});
 	});

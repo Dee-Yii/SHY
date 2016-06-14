@@ -28,6 +28,11 @@ h3 {
   color: #747474;
   text-align: justify;
   line-height: 0.1536rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .introduction .more-text {
   display: none;
