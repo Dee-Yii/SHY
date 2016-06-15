@@ -260,8 +260,9 @@
 <script src="../../static/js/public/zepto.min.js"></script>
 <script>
     $(function (){
+        var index = 0;
         $(".nav li").on("click",function (){
-           var index = $(this).index();
+           index = $(this).index();
            $(this).addClass("active").siblings("li").removeClass("active");
            $(".content").eq(index).addClass("active-content").siblings("div").removeClass("active-content");
         });
@@ -277,7 +278,7 @@
                     success : function (result){
                         if(result){
                             $(".loading").hide();
-                            $("ul").append(result);//页面展示加载的内容
+                            $("ul").eq(index).append(result);//页面展示加载的内容
                         }else{
                             $(".loading").hide();
                         }

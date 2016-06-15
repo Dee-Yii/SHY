@@ -454,8 +454,9 @@
 <script src="../../static/js/public/zepto.min.js"></script>
 <script>
     $(function (){
+        var index = 0;
         $(".lesson-nav a").on("click",function (){
-           var index = $(this).index();
+           index = $(this).index();
            $(this).addClass("active").siblings("a").removeClass("active");
            $("ul").eq(index).show().siblings("ul").hide();
         });
@@ -471,8 +472,13 @@
                     success:function (result){
                         if(result){
                             $(".loading").hide();
-                            $("ul").append()
+                            $("ul").eq(index).append(result);//展示加载内容
+                        }else{
+                            $(".loading").hide();
                         }
+                    },
+                    error:function (e){
+                        $(".loading").hide();
                     }
                 });
             }else{
