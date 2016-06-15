@@ -270,7 +270,22 @@
             var scrollHeight = $(document).height() - $(window).height();
             if(bodyScrollHeight == scrollHeight){
                 $(".loading").show();
-
+                $.ajax({
+                    url : "",
+                    type : "post",
+                    dataType: "json",
+                    success : function (result){
+                        if(result){
+                            $(".loading").hide();
+                            $("ul").append(result);//页面展示加载的内容
+                        }else{
+                            $(".loading").hide();
+                        }
+                    },
+                    error : function (e){
+                        $(".loading").hide();
+                    }
+                });
             }else{
                 $(".loading").hide();
             }

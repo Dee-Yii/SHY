@@ -464,6 +464,17 @@
             var scrollHeight = $(document).height() - $(window).height();
             if(bodyScrollHeight == scrollHeight){
                 $(".loading").show();
+                $.ajax({
+                    url:"",
+                    type:"post",
+                    dataType:"json",
+                    success:function (result){
+                        if(result){
+                            $(".loading").hide();
+                            $("ul").append()
+                        }
+                    }
+                });
             }else{
                 $(".loading").hide();
             }
