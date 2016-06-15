@@ -59,7 +59,7 @@
   border-bottom: 0.01706667rem solid #ee164e;
 }
 .hasApplied .content {
-  padding-top: 0.29866667rem;
+  padding: 0.29866667rem 0;
   display: none;
 }
 .hasApplied .content ul {

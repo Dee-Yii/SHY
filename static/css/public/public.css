@@ -147,3 +147,44 @@ p.myLesson-title {
 .myLessonBox ul li:nth-child(5) p {
   background-color: #5bbf72;
 }
+.loading {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-top: 0.04266667rem;
+  width: 100%;
+  text-align: center;
+}
+.loading i {
+  display: inline-block;
+  width: 0.21333333rem;
+  height: 0.21333333rem;
+  background-image: url("../../../static/images/lessonList/loading.jpg");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  animation: loading 2s linear infinite;
+  -webkit-animation: loading 2s linear infinite;
+  vertical-align: middle;
+}
+.loading span {
+  padding-left: 0.04266667rem;
+  display: inline-block;
+  font-size: 0.11946667rem;
+  color: #cccccc;
+  vertical-align: middle;
+}
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

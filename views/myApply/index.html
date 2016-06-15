@@ -173,6 +173,51 @@
                     </div>
                 </a>
             </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="../../static/images/myApply/lesson1.jpg" alt="图片加载失败"/>
+                    <div class="active-title">
+                        <h3>讲座论坛</h3>
+                        <p class="begin">未开始</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="../../static/images/myApply/lesson1.jpg" alt="图片加载失败"/>
+                    <div class="active-title">
+                        <h3>讲座论坛</h3>
+                        <p class="begin">未开始</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="../../static/images/myApply/lesson1.jpg" alt="图片加载失败"/>
+                    <div class="active-title">
+                        <h3>讲座论坛</h3>
+                        <p class="begin">未开始</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="../../static/images/myApply/lesson1.jpg" alt="图片加载失败"/>
+                    <div class="active-title">
+                        <h3>讲座论坛</h3>
+                        <p class="begin">未开始</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="../../static/images/myApply/lesson1.jpg" alt="图片加载失败"/>
+                    <div class="active-title">
+                        <h3>讲座论坛</h3>
+                        <p class="begin">未开始</p>
+                    </div>
+                </a>
+            </li>
         </ul>
     </div>
 
@@ -208,15 +253,25 @@
         </ul>
     </div>
 </div>
+<div class="loading"><i></i><span>加载更多...</span></div>
 </body>
 <script src="../../static/js/public/zepto.min.js"></script>
 <script>
     $(function (){
-       $(".nav li").on("click",function (){
+        $(".nav li").on("click",function (){
            var index = $(this).index();
            $(this).addClass("active").siblings("li").removeClass("active");
            $(".content").eq(index).addClass("active-content").siblings("div").removeClass("active-content");
-       });
+        });
+        $("body").on("touchend",function (){
+            var bodyScrollHeight = $("body").scrollTop();
+            var scrollHeight = $(document).height() - $(window).height();
+            if(bodyScrollHeight == scrollHeight){
+                $(".loading").show();
+            }else{
+                $(".loading").hide();
+            }
+        });
     });
 </script>
 </html>
