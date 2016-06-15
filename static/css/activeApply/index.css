@@ -22,9 +22,12 @@
   font-size: 0.11093333rem;
   color: #747474;
   line-height: 0.1792rem;
-  height: 0.68266667rem;
   text-align: justify;
   overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .activeInstroductionBox .showMore-butn {
   margin-top: 0.17066667rem;

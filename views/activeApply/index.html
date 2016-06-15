@@ -39,8 +39,7 @@
     <h3 class="activeDetail-title">比赛详情</h3>
     <div class="activeInstroductionBox">
         <p class="active-instroduction">
-            第五届CIP国际少儿才艺大赛是最权威、最高规格、高品质的顶尖少儿赛事、艺术界各路诸侯切磋才艺的一场盛会，一场少儿界顶尖的试听盛宴。本届活动将全面展示少年儿童阳光、自信、快乐气质和多才多艺的青春风事、艺乐气质和多才才艺
-            第五届CIP国际少儿才艺大赛是最权威、最高规格、高品质的顶尖少儿赛事、艺术界各路诸侯切磋才艺的一场盛会，一场少儿界顶尖的试听盛宴。本届活动将全面展示少年儿童阳光、自信、快乐气质和多才多艺的青春风事、艺乐气质和多才才艺
+            第五届CIP国际少儿才艺大赛是最权威、最高规格、高品质的顶尖少儿赛事、艺术界各路诸侯切磋才艺的一场盛会，一场少儿界顶尖的试听盛宴。本届活动将全面展示少年儿童阳光、自信、快乐气质和多才多艺的青春风事、艺乐气质和多才才艺第五届CIP国际少儿才艺大赛是最权威、最高规格、高品质的顶尖少儿赛事、艺术界各路诸侯切磋才艺的一场盛会，一场少儿界顶尖的试听盛宴。本届活动将全面展示少年儿童阳光、自信、快乐气质和多才多艺的青春风事、艺乐气质和多才才艺
         </p>
         <button class="showMore-butn"><i></i><span>展开</span></button>
     </div>
@@ -100,6 +99,14 @@
             var txt = $(this).text();
             var roleType = $(this).attr("data-roleType");
             $(".J_role").text(txt).attr("data-roleType",roleType).trigger("click");
+        });
+        $(".showMore-butn").on("click",function (){
+            var displayState = $(".active-instroduction").css("display");
+            if(displayState == "block"){
+                $(".active-instroduction").css("display","-webkit-box");
+            }else{
+                $(".active-instroduction").css("display","block");
+            }
         });
     });
 </script>

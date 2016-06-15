@@ -147,11 +147,11 @@ p.myLesson-title {
 .myLessonBox ul li:nth-child(5) p {
   background-color: #5bbf72;
 }
+.loading-box {
+  height: 0.29866667rem;
+}
 .loading {
   display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   padding-top: 0.04266667rem;
   width: 100%;
   text-align: center;

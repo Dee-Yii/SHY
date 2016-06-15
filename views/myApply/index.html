@@ -253,7 +253,9 @@
         </ul>
     </div>
 </div>
-<div class="loading"><i></i><span>加载更多...</span></div>
+<div class="loading-box">
+    <div class="loading"><i></i><span>加载更多...</span></div>
+</div>
 </body>
 <script src="../../static/js/public/zepto.min.js"></script>
 <script>
@@ -268,6 +270,7 @@
             var scrollHeight = $(document).height() - $(window).height();
             if(bodyScrollHeight == scrollHeight){
                 $(".loading").show();
+
             }else{
                 $(".loading").hide();
             }
