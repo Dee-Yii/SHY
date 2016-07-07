@@ -463,24 +463,9 @@
         $("body").on("touchend",function (){
             var bodyScrollHeight = $("body").scrollTop();
             var scrollHeight = $(document).height() - $(window).height();
+            console.log(12)
             if(bodyScrollHeight == scrollHeight){
                 $(".loading").show();
-                $.ajax({
-                    url:"",
-                    type:"post",
-                    dataType:"json",
-                    success:function (result){
-                        if(result){
-                            $(".loading").hide();
-                            $("ul").eq(index).append(result);//展示加载内容
-                        }else{
-                            $(".loading").hide();
-                        }
-                    },
-                    error:function (e){
-                        $(".loading").hide();
-                    }
-                });
             }else{
                 $(".loading").hide();
             }
