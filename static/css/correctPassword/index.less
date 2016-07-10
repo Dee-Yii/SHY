@@ -1,0 +1,80 @@
+@rem:200*750/640rem;
+body{
+	background-color: #fff;
+	text-align: center;
+}
+ul{
+	padding: 12/@rem 50/@rem 0 50/@rem;
+	li{
+		border-bottom: 1px solid #b2b2b2;
+		width: 100%;
+		height: 116/@rem;
+		text-align: left;
+		line-height: 116/@rem;
+		i{
+			display: inline-block;
+			width: 40/@rem;
+			height: 46/@rem;
+			background-size: 100% 100%;
+			vertical-align: middle;
+		}
+		&:nth-child(1){
+			i{
+				background-image: url("../../images/correctPassword/unclock.png");
+			}
+		}
+		&:nth-child(2){
+			i{
+				background-image: url("../../images/correctPassword/unclock.png");
+			}
+		}
+		&:nth-child(3){
+			i{
+				background-image: url("../../images/correctPassword/clock.png");
+			}
+		}
+		input{
+			width: 550/@rem;
+			display: inline-block;
+			padding-left: 60/@rem;
+			font-size: 34/@rem;
+			color: #a8a8a8;
+			line-height: 1.4;
+			vertical-align: middle;
+		}
+	}
+}
+button{
+	margin: 100/@rem auto 0 auto;
+	border-radius: 10/@rem;
+	width: 650/@rem;
+	height: 80/@rem;
+	background-color: #46dea6;
+	font-size: 42/@rem;
+	color: #fff;
+}
+.modal{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.4);
+	z-index: 100;
+	.info{
+		position: absolute;
+		left: 50%;
+		top: 512/@rem;
+		transform:translate(-50%,0);
+		-webkit-transform:translate(-50%,0);
+		border-radius: 10/@rem;
+		width: 320/@rem;
+		height: 80/@rem;
+		text-align: center;
+		line-height: 80/@rem;
+		font-size: 26/@rem;
+		color: #fff;
+		background-color: #171717;
+	}
+}
